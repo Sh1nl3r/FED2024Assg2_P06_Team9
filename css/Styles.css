@@ -87,3 +87,71 @@
   .login-box button:hover {
     background-color: #333;
   }
+
+
+
+
+/*Sign Up Page CSS*/
+.signup-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.signup-logo{
+  font-size: 50px;
+}
+.signup-header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100px;
+  padding: 10px 20px;
+}
+
+.signup-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-color: #f9f9f9;
+}
+
+.signup-login-box {
+  background-color: #d3c6c6;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.signup-login-box h2 {
+  margin-bottom: 20px;
+}
+
+.signup-login-box-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.create-account-button {
+  width: 50%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-account-button:hover {
+  background-color: #333;
+}
