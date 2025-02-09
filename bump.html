@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bump Listing</title>
+    <link rel="stylesheet" href="bump.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 id="listing-name">BUMP!</h2>
+        <p class="description">
+            Boost your visibility and drive more sales! Choose from a range of bump packages to suit your needs:  
+            Bump Once Instantly, Daily Bumps for 3 or 7 Days, or Twice a Day for 3 Days.  
+            Maximize your marketplace presence and ensure your listing gets the attention it deserves.
+        </p>
+
+        <div class="bump-section">
+            <h3>Instantly bump your listing’s rank!</h3>
+            <p class="price">$1.00</p>
+            <button class="bump-button" onclick="updateBump(1)">Instant Bump</button>
+
+            <h3>Bump Your listing’s rank for the selected number of days!</h3>
+            <p class="price">$0.80/day</p>
+            <div class="bump-buttons">
+                <button onclick="updateBump(3)">3 days</button>
+                <button onclick="updateBump(4)">4 days</button>
+                <button onclick="updateBump(5)">5 days</button>
+                <button onclick="updateBump(6)">6 days</button>
+                <button onclick="updateBump(7)">7 days</button>
+            </div>
+
+            <h3>Bump your listing’s rank TWICE a day for 3 days!</h3>
+            <p class="price">$4.00</p>
+            <button class="bump-button bump-plus" onclick="updateBump(6)">Bump+</button>
+        </div>
+    </div>
+
+    <script src="bump.js"></script>
+</body>
+</html>
