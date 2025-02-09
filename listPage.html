@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="listPage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="hot-deals">
+            <h2>Hot Deals</h2>
+            <div class="cards-row" id="hot-deals">
+                <!-- Hot Deals will be inserted dynamically here -->
+            </div>
+        </section>
+
+        <section class="recent-listings">
+            <h2>Recent Listings</h2>
+            <div class="cards-grid">
+                <!-- Listings will be dynamically injected here -->
+            </div>
+        </section>        
+    </div>
+
+    <script src="listPage.js"></script>
+</body>
+</html>
