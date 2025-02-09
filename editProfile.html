@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/editProfile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <div class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </div>
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="edit-profile">
+            <h2>Edit Profile</h2>
+            <div class="profile-picture-section">
+                <div class="user-profile">
+                    <img id="edit-profile-avatar" src="default-avatar.png">
+                </div>
+                <p>Clear frontal face photos are an important way for buyers and sellers to learn about each other.</p>
+                <input type="file" id="upload-photo" accept="image/*" style="display: none;">
+                <button class="upload-button">Upload Photo</button>
+            </div>
+            
+            <!-- ✅ Added `id="edit-profile-form"` for better JavaScript targeting -->
+            <form id="edit-profile-form" class="profile-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <h3>Contact Info</h3>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="Enter phone number">
+                </div>
+
+                <button type="submit" class="save-button">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/editProfile.js"></script>
+</body>
+</html>
