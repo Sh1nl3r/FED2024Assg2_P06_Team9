@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Listing</title>
+    <link rel="stylesheet" href="editList.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+
+    <main class="edit-listing-container">
+        <div class="photo-section">
+            <div class="upload-box">
+                <p>Upload Photos (max 10 photos)</p>
+                <input type="file" id="photoUpload" multiple accept="image/*">
+            </div>
+            <div class="current-photos">
+                <h3>Current Photos</h3>
+                <div id="photoPreview"></div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Edit Listing</h2>
+            <form id="editListingForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="price" placeholder="Price" required>
+                <select id="category">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Other">Other</option>
+                </select>
+                <textarea id="description" placeholder="Description"></textarea>
+
+                <div class="deal-method">
+                    <h3>Deal Method</h3>
+                    <label>
+                        Meet Up
+                        <input type="checkbox" id="meetUp">
+                    </label>
+                    <label>
+                        Delivery
+                        <input type="checkbox" id="delivery">
+                    </label>
+                </div>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="editList.js"></script>
+</body>
+</html>
