@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell - Upload Listing</title>
+    <link rel="stylesheet" href="makeList.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+    <main class="upload-container">
+        <section class="upload-photos">
+            <div class="photo-box">
+                <input type="file" id="image" accept="image/*" multiple>
+                <p>Upload Photos (max 10 photos)</p>
+            </div>
+            <ul class="notes">
+                <li>Listing will be up for 30 days</li>
+                <li>Max of 10 listings are pending at a time</li>
+                <li>Manually delete the listing once sold</li>
+                <li>Enter a clear description; you must meet any legal obligations in your description</li>
+            </ul>
+        </section>
+        
+        <section class="listing-details">
+            <form id="listingForm">
+                <input type="text" id="title" placeholder="Listing Name" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <select id="category" required>
+                    <option value="" disabled selected>Category</option>
+                    <option value="electronics">Technology</option>
+                    <option value="fashion">Photography</option>
+                    <option value="home">Women's Fashion</option>
+                    <option value="electronics">Men's Fashion</option>
+                    <option value="electronics">Beauty and Personal Care</option>
+                    <option value="electronics">Luxury</option>
+                    <option value="electronics">Video Games</option>
+                    <option value="electronics">Furniture</option>
+                    <option value="electronics">Bicycles</option>
+                    <option value="electronics">Sports</option>
+                    <option value="electronics">Health</option>
+                    <option value="electronics">Others</option>
+                </select>
+                <textarea id="description" placeholder="Description" required></textarea>
+            </form>
+        </section>
+
+        <section class="deal-method">
+            <h3>Deal Method</h3>
+            <label class="switch">
+                <span>Meet Up</span>
+                <input type="checkbox" id="meetup">
+                <span class="slider"></span>
+            </label>
+            <label class="switch">
+                <span>Delivery</span>
+                <input type="checkbox" id="delivery">
+                <span class="slider"></span>
+            </label>
+            <button type="submit" class="list-btn">List Now</button>
+        </section>
+    </main>
+    <script src="makeList.js"></script>
+</body>
+</html>
