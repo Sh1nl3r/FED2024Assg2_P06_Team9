@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - MokeSell</title>
+  <link rel="stylesheet" href="css/CategoryPage.css" type="text/css">
+</head>
+<body class="category-body">
+  <header class="header">
+    <div class="logo">MokeSell</div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="listPage.html">Listings</a>
+        <a href="SupportPage.html">Support</a>
+    </nav>
+    <div class="menu">
+        <span class="icon">
+            <a href="profile.html" class="user-profile">
+                <img id="avatar" src="default-avatar.png">
+            </a>                
+        </span>
+        <span class="icon">❤</span>
+        <span class="icon">🔔</span>
+        <span class="icon">🔍</span>
+        <a href="makeList.html">
+            <button class="sell-button" id="sellButton">Sell</button>
+        </a>
+    </div>
+</header>
+
+<div class="category-search-bar">
+  <input type="text" id="search" placeholder="Search for an item">
+</div>
+
+<div class="categories-container">
+  <div class="categories-title">Categories</div>
+  <div class="categories-grid">
+    <div class="category-box" onclick="navigateToCategory('Technology')">Technology
+      <br>
+      <p class ="category-image">💻</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Photography')">Photography
+      <br>
+      <p class ="category-image">📷</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Women\'s Fashion')">Women's Fashion
+      <br>
+      <p class ="category-image">👗</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Men\'s Fashion')">Men's Fashion
+      <br>
+      <p class ="category-image">👔</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Beauty and Personal Care')">Beauty and Personal Care
+      <br>
+      <p class ="category-image">💄</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Luxury')">Luxury
+      <br>
+      <p class ="category-image">💎</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Video Games')">Video Games
+      <br>
+      <p class ="category-image">🎮</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Furniture')">Furniture
+      <br>
+      <p class ="category-image">🛋️</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Bicycles')">Bicycles
+      <br>
+      <p class ="category-image">🚲</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Sports')">Sports
+      <br>
+      <p class ="category-image">🏆</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Health')">Health
+      <br>
+      <p class ="category-image">💊</p>
+    </div>
+    <div class="category-box" onclick="navigateToCategory('Others')">Others
+      <br>
+      <p class ="category-image">🔖</p>
+    </div>
+</div>
+</div>
+<script src="js/CategoryPage.js"></script>
+</body>
+</html>
+
