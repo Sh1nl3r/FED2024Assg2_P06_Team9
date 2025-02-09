@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link rel="stylesheet" href="css/listDetails.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+    <main class="item-details-container">
+        <section class="item-info">
+            <h1 id="item-name">Loading...</h1>
+            <p class="price" id="item-price">$0</p>
+            <p class="posted-date" id="posted-date">Posted on --</p>
+            <p class="category" id="item-category">Category: --</p>
+            <h2>Description</h2>
+            <p class="description-text" id="item-description">Loading description...</p>
+        </section>
+        <section class="item-carousel">
+            <div class="carousel" id="carousel-container">
+                <img id="carousel-image" src="default.jpg" alt="Item Image">
+            </div>
+        </section>
+        <section class="user-info">
+            <div class="profile-pic" id="profile-pic"></div>
+            <p class="username" id="username">Loading...</p>
+            <p class="reviews" id="user-reviews">-- Reviews</p>
+            <button class="chat-btn">Chat</button>
+            <div class="deal-method">
+                <h3>Deal Method</h3>
+                <p id="deal-method">Loading...</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/listDetails.js"></script>
+</body>
+</html>
