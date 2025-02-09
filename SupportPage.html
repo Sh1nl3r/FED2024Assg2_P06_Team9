@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Feedback - MokeSell</title>
+    <link rel="stylesheet" href="css/SupportPage.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+
+    <!-- Support & Feedback Form -->
+    <main class="support-container">
+        <h2>Support and Feedback</h2>
+        <p class="support-text">
+            We value your feedback and are here to help! Whether you have suggestions to improve our services, need assistance with an issue, or have questions, we’re just a click away.
+        </p>
+
+        <form id="support-form">
+            <div class="input-row">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Email" required>
+                <select required>
+                    <option value="" disabled selected>Please select a purpose</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support Request</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <textarea placeholder="Please describe your purpose:" rows="5" required></textarea>
+            <br><br>
+            <button type="submit">Submit Form</button>
+        </form>
+    </main>
+<script src="js/SupportPage.js"></script>
+</body>
+</html>
