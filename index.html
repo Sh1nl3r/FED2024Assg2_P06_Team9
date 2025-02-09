@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell - Homepage</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <button class="sell-button" id="sellButton">Sell</button>
+        </div>
+    </header>
+    <main class="main-container">
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="🔍 Search for an item">
+            <button id="search-button" class="categories-button">Search</button>
+            <a href="CategoryPage.html">
+                <button class="categories-button">View Categories</button>
+            </a>
+        </section>
+        
+        <section class="trend-title"><h2>Trending</h2></section>
+        <section class="trending-container">
+            <div class="carousel">
+                <button class="prev-btn">&#10094;</button>
+                <div class="carousel-wrapper" id="trending-carousel">
+                    <!-- Dynamic slides will be added here -->
+                </div>
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="past-searches">
+            <div class="section-header">
+                <h2>Recent Listings</h2>
+            </div>
+            <div class="search-cards">
+                <!-- Past searches will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
