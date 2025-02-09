@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <link rel="stylesheet" href="profile.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">MokeSell</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="listPage.html">Listings</a>
+                <a href="SupportPage.html">Support</a>
+            </nav>
+            <div class="menu">
+                <span class="icon">
+                    <a href="profile.html" class="user-profile">
+                        <img id="avatar" src="default-avatar.png">
+                    </a>                
+                </span>
+                <span class="icon">❤</span>
+                <span class="icon">🔔</span>
+                <span class="icon">🔍</span>
+                <a href="makeList.html">
+                    <button class="sell-button" id="sellButton">Sell</button>
+                </a>
+            </div>
+        </header>
+
+        <div class="profile-container">
+            <div class="user-info">
+                <div class="user-profile">
+                    <img id="edit-profile-avatar" src="default-avatar.png">
+                </div>
+                <div class="user-details">
+                    <h2>username</h2>
+                    <p>email</p>
+                </div>
+                <div class="profile-actions">
+                    <a href="editProfile.html" class="edit-profile-link">Edit Profile</a>
+                </div>
+            </div>
+
+            <div class="listings">
+                <h3>Your Listings</h3>
+                <div class="listing-items">
+                    <div class="listing-card">
+                        <div class="listing-header">
+                            <div class="profile-pic-small"></div>
+                            <div class="listing-username">username</div>
+                            <div class="listing-time">14 days ago</div>
+                        </div>
+                        <div class="listing-photo">photo</div>
+                        <div class="listing-details">
+                            <p>Item Name</p>
+                            <p>Price</p>
+                            <p>Category</p>
+                        </div>
+                        <button class="chat-button">chat</button>
+                    </div>
+
+                    <div class="listing-card">
+                        <div class="listing-header">
+                            <div class="profile-pic-small"></div>
+                            <div class="listing-username">username</div>
+                            <div class="listing-time">14 days ago</div>
+                        </div>
+                        <div class="listing-photo">photo</div>
+                        <div class="listing-details">
+                            <p>Item Name</p>
+                            <p>Price</p>
+                            <p>Category</p>
+                        </div>
+                        <button class="chat-button">chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="profile.js"></script>
+    </body>
+    </html>
