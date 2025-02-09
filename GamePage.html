@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MokeSell Spin Wheel</title>
+    <link rel="stylesheet" href="css/GamePage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MokeSell</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="listPage.html">Listings</a>
+            <a href="SupportPage.html">Support</a>
+        </nav>
+        <div class="menu">
+            <span class="icon">
+                <a href="profile.html" class="user-profile">
+                    <img id="avatar" src="default-avatar.png">
+                </a>                
+            </span>
+            <span class="icon">❤</span>
+            <span class="icon">🔔</span>
+            <span class="icon">🔍</span>
+            <a href="makeList.html">
+                <button class="sell-button" id="sellButton">Sell</button>
+            </a>
+        </div>
+    </header>
+    <div class="rewards-container">
+        <h2>🎉 MokeSell Rewards 🎉</h2>
+        <p>Thank you for submitting a feedback for our website, Earn points by spinning the wheel!</p>
+
+        <!-- Points Display -->
+        <div class="points-display">
+            <h3>Your Points: <span id="points">0</span></h3>
+        </div>
+
+        <!-- Spin-the-Wheel -->
+        <div class="wheel-container">
+            <div class="pointer"></div> <!-- Pointer above the wheel -->
+            <div id="wheel">
+                <div class="wheel-text">
+                    <span class="text" style="transform: rotate(30deg) translateY(-60px);">10</span>
+                    <span class="text" style="transform: rotate(90deg) translateY(-60px);">5</span>
+                    <span class="text" style="transform: rotate(150deg) translateY(-60px);">15</span>
+                    <span class="text" style="transform: rotate(210deg) translateY(-60px);">20</span>
+                    <span class="text" style="transform: rotate(270deg) translateY(-60px);">50</span>
+                    <span class="text" style="transform: rotate(330deg) translateY(-60px);">25</span>
+                </div>
+            </div>
+            <button id="spinButton">🎡 Spin & Win Rewards</button>
+        </div>
+    </div>
+
+    <script src="js/GamePage.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* General Reset */
+body, h1, h2, p, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin: 0 10px;
+    color: white;
+    font-size: large;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.user-profile > img#avatar {
+	padding: .7em;
+  margin-left: .3em;
+  margin-top: .3em;
+  height: 2.23em;
+  width: 2.23em;
+  border-radius: 18em;
+}
+
+.sell-button {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* .rewards-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.points-display {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Wheel Container */
+.wheel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* The Wheel */
+#wheel {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ffeb3b 0deg 60deg, 
+        #ff9800 60deg 120deg, 
+        #e91e63 120deg 180deg, 
+        #2196F3 180deg 240deg, 
+        #4CAF50 240deg 300deg, 
+        #9C27B0 300deg 360deg);
+    border: 5px solid #333;
+    position: relative;
+    transition: transform 3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wheel text container */
+.wheel-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual text labels */
+.text {
+    position: absolute;
+    left: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+/* FIX: Pointer Now Above the Wheel */
+.pointer {
+    position: absolute;
+    top: -30px; /* Adjusted to be above the wheel */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid red; /* Now pointing down */
+    z-index: 2;
+}
+
+/* Spin Button */
+button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e65100;
+}
